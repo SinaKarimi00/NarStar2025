@@ -40,9 +40,9 @@ namespace CommandSystem
 
             if (blockReport.GetHittedGameObject(blockTag: "LampGround"))
             {
-                if (blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<SpriteRenderer>().enabled)
+                if (blockReport.GetHittedGameObject(blockTag: "LampGround").transform.Find("Top/GameObject").GetComponent<SpriteRenderer>().enabled)
                 {
-                    blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<SpriteRenderer>().enabled =
+                    blockReport.GetHittedGameObject(blockTag: "LampGround").transform.Find("Top/GameObject").GetComponent<SpriteRenderer>().enabled =
                         false;
                     levelConfig.turnedOnLightblokNumber++;
                 }
