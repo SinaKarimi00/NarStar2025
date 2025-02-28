@@ -15,7 +15,8 @@ namespace DefaultNamespace.UI_System
         public void InitializeMenuUi()
         {
             CreateCanvas();
-            new MenuManager(canvas, onStartGameRequested: InitializeLevelUi/*, onNextLevelRequested: InitializeLevelUi*/);
+            new MenuManager(canvas,
+                onStartGameRequested: InitializeLevelUi /*, onNextLevelRequested: InitializeLevelUi*/);
         }
 
         private void CreateCanvas()

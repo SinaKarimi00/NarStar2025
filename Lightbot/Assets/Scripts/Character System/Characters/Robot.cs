@@ -5,6 +5,5 @@ namespace CharacterSystem
 {
     public class Robot : MonoBehaviour
     {
-
     }
 }

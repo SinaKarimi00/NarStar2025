@@ -15,11 +15,13 @@ namespace UI_System.Button_System
 
         public void CreateFixedButton(string buttonName, string functionName, Action onStartGameClicked)
         {
-            GameObject buttonGameObject = Object.Instantiate(GetButtonPrefab(), canvas.transform.GetChild(0), true);
+            GameObject buttonGameObject = Object.Instantiate(GetButtonPrefab(), canvas.transform);
+            buttonGameObject.transform.localScale = Vector3.one * 4;
             if (buttonGameObject == null)
                 return;
             MenuButtonListener fixedButtonListener = new MenuButtonListener(canvas, onStartGameClicked);
-            buttonGameObject.GetComponent<Button>().onClick.AddListener(() => fixedButtonListener.GetFunction(functionName, typeof(MenuButtonListener)).Invoke());
+            buttonGameObject.GetComponent<Button>().onClick.AddListener(() =>
+                fixedButtonListener.GetFunction(functionName, typeof(MenuButtonListener)).Invoke());
             SetButtonName(buttonGameObject, buttonName);
         }
     }

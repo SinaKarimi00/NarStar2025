@@ -29,6 +29,11 @@ namespace DefaultNamespace
                 await Task.Delay(500);
                 await WaitForAnimationToFinish(animator);
             }
+
+            if (levelConfig.turnedOnLightblokNumber == levelConfig.neededLightblokNumber)
+            {
+                
+            }
         }
 
         private async Task WaitForAnimationToFinish(Animator animator)

@@ -16,14 +16,38 @@ namespace UI_System.Button_System
 
         public void CreateNonFixedButtons(Robot robot)
         {
-            foreach (string item in levelConfig.fullNameOfNeededCommands)
+            // foreach (string item in levelConfig.fullNameOfNeededCommands)
+            // {
+            //     NonFixedButtonListener nonFixedButtonListener = new NonFixedButtonListener(robot, levelConfig);
+            //     GameObject newButton = Object.Instantiate(GetButtonPrefab(), canvas.transform.GetChild(0), true);
+            //     if (newButton == null)
+            //         continue;
+            //     newButton.GetComponent<Button>().onClick
+            //         .AddListener(() => nonFixedButtonListener.SetCommandListener(item));
+            //     SetButtonName(newButton, Type.GetType(item)?.Name);
+            //     SetButtonTexture();
+            // }
+
+            for (int i = 0; i < levelConfig.fullNameOfNeededCommands.Count; i++)
             {
-                NonFixedButtonListener nonFixedButtonListener = new NonFixedButtonListener(robot, levelConfig);
-                GameObject newButton = Object.Instantiate(GetButtonPrefab(), canvas.transform.GetChild(0), true);
+                string item = levelConfig.fullNameOfNeededCommands[i];
+                NonFixedButtonListener nonFixedButtonListener =
+                    new NonFixedButtonListener(robot, levelConfig);
+                GameObject newButton = Object.Instantiate(GetButtonPrefab(), canvas.transform.Find("UI/Commands/Viewport/Content"));
                 if (newButton == null)
                     continue;
-                newButton.GetComponent<Button>().onClick.AddListener(() => nonFixedButtonListener.SetCommandListener(item));
+
+                int materialId = (i < levelConfig.MaterialID.Count) ? levelConfig.MaterialID[i] : -1;
+
+                newButton.GetComponent<Button>().onClick
+                    .AddListener(() => nonFixedButtonListener.SetCommandListener(item, materialId, canvas));
+
                 SetButtonName(newButton, Type.GetType(item)?.Name);
+
+                if (materialId != -1)
+                {
+                    SetButtonTexture(newButton, materialId);
+                }
             }
         }
     }

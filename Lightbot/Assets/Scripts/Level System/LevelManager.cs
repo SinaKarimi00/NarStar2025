@@ -32,8 +32,8 @@ namespace LightBot.UI_System
             FixedLevelButton fixedLevelButton = new FixedLevelButton(canvas, levelName, commandPlayer.Play);
             fixedLevelButton.CreateFixedButton("Play", "PlayButton");
             fixedLevelButton.CreateFixedButton("Reset", "ResetGame");
-            fixedLevelButton.CreateFixedButton("Save", "SaveGame");
-            fixedLevelButton.CreateFixedButton("Load", "LoadGame");
+            // fixedLevelButton.CreateFixedButton("Save", "SaveGame");
+            // fixedLevelButton.CreateFixedButton("Load", "LoadGame");
             FixedMenuButton fixedMenuButton = new FixedMenuButton(canvas, levelName);
             fixedMenuButton.CreateFixedButton("Next Level", "NextLevel", InitializeNextLevel);
             NonFixedButton nonFixedButton = new NonFixedButton(canvas, levelName);
