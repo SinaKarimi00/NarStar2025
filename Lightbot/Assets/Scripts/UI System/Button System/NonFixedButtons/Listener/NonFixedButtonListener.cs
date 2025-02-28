@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Linq;
 using CharacterSystem;
 using CommandSystem;
 using DefaultNamespace.Level_System;
+using DefaultNamespace.TextureRepo;
+using TMPro;
 using UI_System.Button_System.AbstractClass;
+using UnityEngine;
+using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 
 namespace UI_System.Button_System
@@ -16,9 +22,40 @@ namespace UI_System.Button_System
             this.levelConfig = levelConfig;
         }
 
-        public void SetCommandListener(string commandName)
+        public void SetCommandListener(string commandName, int id, GameObject canvas)
         {
-            levelConfig.SelectedCommands.Add((ICommand) Activator.CreateInstance(Type.GetType(commandName) ?? throw new InvalidOperationException(), robot, levelConfig));
+            if (levelConfig.SelectedCommands.Count >= levelConfig.maxCommands)
+            {
+                return;
+            }
+
+            levelConfig.SelectedCommands.Add((ICommand)Activator.CreateInstance(
+                Type.GetType(commandName) ?? throw new InvalidOperationException(), robot, levelConfig, id));
+
+            var button = GetButtonPrefab();
+            var newButton = Object.Instantiate(GetButtonPrefab(), canvas.transform.Find("UI/SelectedCommands"));
+            newButton.GetComponentInChildren<Button>().interactable = false;
+            SetButtonName(button, commandName);
+            SetButtonTexture(button, id);
+        }
+
+
+        private GameObject GetButtonPrefab()
+        {
+            string buttonPrefabAddress = "Prefabs/Levels/Button";
+            return Resources.Load<GameObject>(buttonPrefabAddress);
+        }
+
+        private void SetButtonName(GameObject button, string commandName)
+        {
+            button.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = commandName;
+        }
+
+        private void SetButtonTexture(GameObject button, int id)
+        {
+            var textureRepo = Resources.Load<TextureRepo>("TextureRepo");
+            var sprite = textureRepo.GetSprite(id);
+            button.GetComponent<Image>().sprite = sprite;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace CommandSystem
     public class LeftRotation : AbstractCommand
     {
 
-        public LeftRotation(Robot robot, LevelConfig levelConfig) : base(robot, levelConfig)
+        public LeftRotation(Robot robot, LevelConfig levelConfig, int id) : base(robot, levelConfig, id)
         {
         }
 

@@ -13,7 +13,7 @@ namespace CommandSystem
         protected readonly LevelConfig levelConfig;
         protected readonly IServiceLocator serviceLocator = new ServiceLocator();
 
-        protected AbstractCommand(Robot robot, LevelConfig levelConfig)
+        protected AbstractCommand(Robot robot, LevelConfig levelConfig, int id)
         {
             this.robot = robot;
             this.levelConfig = levelConfig;

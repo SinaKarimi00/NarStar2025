@@ -12,7 +12,7 @@ namespace CommandSystem
     {
         private readonly BlockReport blockReport;
 
-        public Jump(Robot robot, LevelConfig levelConfig) : base(robot, levelConfig)
+        public Jump(Robot robot, LevelConfig levelConfig, int id) : base(robot, levelConfig, id)
         {
             blockReport = new BlockReport(this.robot);
         }
