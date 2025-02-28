@@ -18,6 +18,6 @@ MonoBehaviour:
   - CommandSystem.RightRotation
   - CommandSystem.LeftRotation
   levelName: Level1
-  neededLightblokNumber: 0
+  neededLightblokNumber: 11
   turnedOnLightblokNumber: 0
   materialID: 000000000100000002000000

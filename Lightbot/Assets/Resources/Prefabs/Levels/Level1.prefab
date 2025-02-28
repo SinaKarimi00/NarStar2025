@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 146779318721998086}
   m_Layer: 0
   m_Name: Blok (21)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 529747550369438907}
   m_Layer: 0
   m_Name: Blok (13)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2210,7 +2210,7 @@ GameObject:
   - component: {fileID: 636002468727230934}
   m_Layer: 0
   m_Name: Blok (5)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2704,7 +2704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6380562278307602174
 Transform:
   m_ObjectHideFlags: 0
@@ -3890,7 +3890,7 @@ GameObject:
   - component: {fileID: 1052462102028217517}
   m_Layer: 0
   m_Name: Blok (10)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4889,7 +4889,7 @@ GameObject:
   - component: {fileID: 1350133171168664987}
   m_Layer: 0
   m_Name: Blok (11)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7098,7 +7098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5734747578559962929
 Transform:
   m_ObjectHideFlags: 0
@@ -7934,7 +7934,7 @@ GameObject:
   - component: {fileID: 3505546072930838734}
   m_Layer: 0
   m_Name: Blok (20)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9063,7 +9063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3558695380394313036
 Transform:
   m_ObjectHideFlags: 0
@@ -10711,7 +10711,7 @@ GameObject:
   - component: {fileID: 4459079440750923416}
   m_Layer: 0
   m_Name: Blok (9)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11644,7 +11644,7 @@ GameObject:
   - component: {fileID: 4878546529585272078}
   m_Layer: 0
   m_Name: Blok (4)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14099,7 +14099,7 @@ GameObject:
   - component: {fileID: 5206896308669058078}
   m_Layer: 0
   m_Name: Blok (3)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15265,7 +15265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5250410700841474977
 Transform:
   m_ObjectHideFlags: 0
@@ -19243,7 +19243,7 @@ GameObject:
   - component: {fileID: 6625796641916603415}
   m_Layer: 0
   m_Name: Blok (18)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20082,7 +20082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6900800684707404398
 Transform:
   m_ObjectHideFlags: 0
@@ -20909,7 +20909,7 @@ GameObject:
   - component: {fileID: 7069418421389474786}
   m_Layer: 0
   m_Name: Blok (25)
-  m_TagString: Untagged
+  m_TagString: LampGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21244,7 +21244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2392112577848197139
 Transform:
   m_ObjectHideFlags: 0

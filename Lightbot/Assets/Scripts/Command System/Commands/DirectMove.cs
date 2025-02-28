@@ -38,7 +38,7 @@ namespace CommandSystem
             // blockColor = blockColor == Color.yellow ? Color.red : Color.yellow;
             // var material = textureRepo.GetMaterial(_id);
 
-            if (blockReport.GetHittedGameObject(blockTag: "LampGround"))
+            if (blockReport.GetHittedGameObject(blockTag: "LampGround") || true)
             {
                 if (blockReport.GetHittedGameObject(blockTag: "LampGround").transform.Find("Top/GameObject").GetComponent<SpriteRenderer>().enabled)
                 {
