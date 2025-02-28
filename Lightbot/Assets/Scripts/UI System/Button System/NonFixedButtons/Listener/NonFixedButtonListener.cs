@@ -32,10 +32,10 @@ namespace UI_System.Button_System
             levelConfig.SelectedCommands.Add((ICommand)Activator.CreateInstance(
                 Type.GetType(commandName) ?? throw new InvalidOperationException(), robot, levelConfig, id));
 
-            var button = GetButtonPrefab();
-            var newButton = Object.Instantiate(GetButtonPrefab(), canvas.transform.Find("UI/SelectedCommands"));
+            var button = Resources.Load<GameObject>("Prefabs/Levels/Button2");
+            var newButton = Object.Instantiate(button, canvas.transform.Find("UI/SelectedCommands"));
             newButton.GetComponentInChildren<Button>().interactable = false;
-            SetButtonName(button, commandName);
+            // SetButtonName(button, commandName);
             SetButtonTexture(button, id);
         }
 

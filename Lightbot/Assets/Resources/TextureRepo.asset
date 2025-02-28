@@ -17,4 +17,8 @@ MonoBehaviour:
     Material: {fileID: 2100000, guid: 1fb8cb6eb61c2404e8984be7a6b5d4bf, type: 2}
   sprites:
   - TextureId: 0
-    Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    Sprite: {fileID: 21300000, guid: 0570564ececfa3941940ece328174b05, type: 3}
+  - TextureId: 1
+    Sprite: {fileID: 21300000, guid: e020f13df63c88541b9eb10bc015fe18, type: 3}
+  - TextureId: 2
+    Sprite: {fileID: 21300000, guid: 168fd99cefc8f5f4a98ef02313499925, type: 3}

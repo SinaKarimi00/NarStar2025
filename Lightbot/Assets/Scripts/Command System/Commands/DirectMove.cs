@@ -36,21 +36,22 @@ namespace CommandSystem
             // Color blockColor = blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<Renderer>().material
             //     .color;
             // blockColor = blockColor == Color.yellow ? Color.red : Color.yellow;
-            var material = textureRepo.GetMaterial(_id);
+            // var material = textureRepo.GetMaterial(_id);
 
             if (blockReport.GetHittedGameObject(blockTag: "LampGround"))
             {
-                if (blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<Renderer>().material ==
-                    material)
+                if (blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<SpriteRenderer>().enabled)
                 {
+                    blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<SpriteRenderer>().enabled =
+                        false;
                     levelConfig.turnedOnLightblokNumber++;
                 }
                 else
                 {
-                    levelConfig.turnedOnLightblokNumber--;
+                    // levelConfig.turnedOnLightblokNumber--;
                 }
 
-                blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<Renderer>().material = material;
+                // blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<Renderer>().material = material;
             }
 
 

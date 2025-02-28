@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ee223c264940908f98494bb822396d, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
+  maxCommands: 5
   fullNameOfNeededCommands:
   - CommandSystem.DirectMove
   - CommandSystem.RightRotation
   - CommandSystem.LeftRotation
-  - CommandSystem.ChangeLampState
-  - CommandSystem.Jump
   levelName: Level1
   neededLightblokNumber: 0
   turnedOnLightblokNumber: 0
-  materialID: ffffffffffffffffffffffff00000000ffffffff
+  materialID: 000000000100000002000000

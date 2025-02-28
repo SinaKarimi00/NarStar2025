@@ -32,7 +32,8 @@ namespace DefaultNamespace
 
             if (levelConfig.turnedOnLightblokNumber == levelConfig.neededLightblokNumber)
             {
-                
+                var gameObject = Resources.Load<GameObject>("WinCanvas");
+                Object.Instantiate(gameObject);
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using CharacterSystem;
+using TMPro;
 using UI_System.Button_System.AbstractClass;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,7 +34,9 @@ namespace UI_System.Button_System
                 string item = levelConfig.fullNameOfNeededCommands[i];
                 NonFixedButtonListener nonFixedButtonListener =
                     new NonFixedButtonListener(robot, levelConfig);
-                GameObject newButton = Object.Instantiate(GetButtonPrefab(), canvas.transform.Find("UI/Commands/Viewport/Content"));
+                var button = Resources.Load<GameObject>("Prefabs/Levels/Button2");
+                GameObject newButton = Object.Instantiate(button,
+                    canvas.transform.Find("UI/Commands/Viewport/Content"));
                 if (newButton == null)
                     continue;
 
@@ -42,7 +45,7 @@ namespace UI_System.Button_System
                 newButton.GetComponent<Button>().onClick
                     .AddListener(() => nonFixedButtonListener.SetCommandListener(item, materialId, canvas));
 
-                SetButtonName(newButton, Type.GetType(item)?.Name);
+                // SetButtonName(newButton, Type.GetType(item)?.Name);
 
                 if (materialId != -1)
                 {
