@@ -43,7 +43,7 @@ namespace CommandSystem
             }
             else
             {
-                levelConfig.turnedOnLightblokNumber--;
+                // levelConfig.turnedOnLightblokNumber--;
             }
 
             // blockReport.GetHittedGameObject(blockTag: "LampGround").GetComponent<Renderer>().material.color =
